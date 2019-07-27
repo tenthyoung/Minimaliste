@@ -1,9 +1,9 @@
 const express = require("express");
+const app = express();
 
 const mongoose = require("mongoose");
 const routes = require("./routes");
-const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
@@ -18,7 +18,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://user1:password1@ds125871.mlab.com:25871/heroku_0xn0jnk7",
+  process.env.MONGODB_URI || "mongodb://localhost/productDB",
   {
     useCreateIndex: true,
     useNewUrlParser: true
@@ -27,5 +27,5 @@ mongoose.connect(
 
 // Start the API server
 app.listen(PORT, () =>
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
+  console.log(`🌎  ==> API Server now listening on http://localhost:${PORT}`)
 );
