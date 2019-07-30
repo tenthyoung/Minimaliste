@@ -10,8 +10,11 @@ class Login extends Component {
             name: "",
             email: "",
             password: ""
-            
         }
+
+        // This is just another way of binding the context of 'this'
+        this.submitLogin = this.submitLogin.bind(this);
+        this.submitSignUp = this.submitSignUp.bind(this);
     }
     
     toggleLogin = () => {
@@ -22,17 +25,44 @@ class Login extends Component {
         }
     }
 
-    submitSignUp = evt => {
+    async submitSignUp(evt) {
         evt.preventDefault();
-        console.log(this.state)
+        let signupInfo = {...this.state}
+        delete signupInfo.isLoginFormShowing;
+        
+        let response = await fetch('/api/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(signupInfo)
+        })
+
+        // we need to see if the server failed:
+        let json = response.json();
+        console.log(json)
+
+        // we need to clear out the form fields after the user submitted
         this.setState({ name: "", email: "", password: "" });
     }
 
-    submitLogin = evt => {
+    async submitLogin(evt) {
         evt.preventDefault();
-        console.log(this.state)
-        this.setState({ email: "", password: "" });
+
+        let response = await fetch('/api/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(this.state),
+        })
+
+        // we need to see if the server failed:
+        let json = response.json();
+        console.log(json)
+
         
+        this.setState({ email: "", password: "" });
     }
     
     handleChange = evt => {

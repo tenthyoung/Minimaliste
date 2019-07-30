@@ -1,10 +1,10 @@
 const path = require("path");
 const router = require("express").Router();
-const bookRoutes = require("./books");
+const userroutes = require("./users");
 const googleRoutes = require("./google");
 
 // Book routes
-router.use("/books", bookRoutes);
+router.use("/users", userroutes);
 
 // Google Routes
 router.use("/google", googleRoutes);

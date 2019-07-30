@@ -4,6 +4,7 @@ Technologies/Frameworks We used:
 * Bulma CSS
 * Stripe API
 * Passport JS
+* Workbox
 
 Requirements:
 * [x] Must use ReactJS in some way (even if minimal)
