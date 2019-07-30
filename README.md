@@ -5,7 +5,7 @@ Technologies/Frameworks We used:
 * Stripe API
 * 
 
-Instructions:
+Requirements:
 * [x] Must use ReactJS in some way (even if minimal)
 * [x] Must use a Node and Express Web Server
 * [x] Must be backed by a MySQL or MongoDB Database with a Sequelize or Mongoose ORM
