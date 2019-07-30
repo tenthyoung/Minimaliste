@@ -34,8 +34,8 @@ class Nav extends Component {
     return (
           <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-              <a id="brand" className="navbar-item letter-spacing" href="/">
-                IKEA
+              <a id="logo" className="navbar-item" href="/">
+                MINIMALISTE
               </a>
               <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true" />
@@ -45,16 +45,7 @@ class Nav extends Component {
             </div>
             <div id="navbarBasicExample" className="navbar-menu">
               <div className="navbar-start">
-                <a className="navbar-item">
-                  Home
-                </a>
-                <a className="navbar-item">
-                  Documentation
-                </a>
                 <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link">
-                    More
-                  </a>
                   <div className="navbar-dropdown">
                     <a className="navbar-item">
                       About
@@ -73,16 +64,22 @@ class Nav extends Component {
                 </div>
               </div>
               <div className="navbar-end">
-                <div className="navbar-item">
-                  <div className="buttons">
-                    <a className="button is-primary">
-                      <strong>Sign up</strong>
-                    </a>
-                    <a className="button is-light">
-                      Log in
-                    </a>
-                  </div>
+                <div id="nav-search" className="navbar-item">
+                  <i class="fas fa-search"></i>
                 </div>
+                <div id="nav-wishlist" className="navbar-item">
+                  <i className="far fa-heart" ></i>
+                </div>
+                <div id="nav-cart" className="navbar-item">
+                  <i className="fas fa-shopping-cart" ></i>
+                  {/* CART */}
+                </div>
+                <Link id="nav-login" className="navbar-item" to="/login">
+                    <i className="far fa-user"></i>
+                      LOGIN
+                </Link>
+
+                
               </div>
             </div>
           </nav>
@@ -92,43 +89,3 @@ class Nav extends Component {
 }
 
 export default Nav;
-
-
-{/* <nav className="navbar navbar-expand-lg navbar-light bg-light mb-2">
-<Link className="navbar-brand" to="/">
-  Google Books
-</Link>
-<button
-  onClick={this.toggleNav}
-  className="navbar-toggler"
-  data-toggle="collapse"
-  data-target="#navbarNav"
-  aria-controls="navbarNav"
-  aria-expanded="false"
-  aria-label="Toggle navigation"
->
-  <span className="navbar-toggler-icon" />
-</button>
-<div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
-  <ul className="navbar-nav">
-    <li className="nav-item">
-      <Link
-        onClick={this.toggleNav}
-        className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
-        to="/"
-      >
-        Search
-      </Link>
-    </li>
-    <li className="nav-item">
-      <Link
-        onClick={this.toggleNav}
-        className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
-        to="/saved"
-      >
-        Saved
-      </Link>
-    </li>
-  </ul>
-</div>
-</nav> */}
