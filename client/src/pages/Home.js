@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import Product from "./Product/Product"
 
 class Home extends Component {
 
   render() {
     return (
-      <h1></h1>
-    );
+      <Product Furniture="Chair"/>
+    )
   }
 }
 
