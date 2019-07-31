@@ -13,6 +13,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
+          {/* <Route exact path="/:category/" render={routeProps = <Category {...routeProps} />} /> */}
+          {/* <Route exact path="/:category/:productid" render={routeProps = <Product {...routeProps} />} /> */}
         </Switch>
       </div>
     </Router>
