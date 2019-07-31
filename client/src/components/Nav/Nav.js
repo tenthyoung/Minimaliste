@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Dropdown from "./Dropdown/Dropdown";
 import "./style.css";
 
 class Nav extends Component {
@@ -18,18 +19,22 @@ class Nav extends Component {
             </div>
             <div id="navbarBasicExample" className="navbar-menu">
               <div className="navbar-end">
-                <Link id="nav-search" className="navbar-item" to="/search">
-                    <i className="fas fa-search"></i>
-                </Link>
-                <Link id="nav-wishlist" className="navbar-item" to='/wishlist'>
+                {/* <Link id="nav-search" className="navbar-item" to="/search">
+                    SHOP
+                </Link> */}
+                <Dropdown 
+                  name="SHOP"
+                  click={() => window.location.reload()}
+                />
+                {/* <Link id="nav-wishlist" className="navbar-item" to='/wishlist'>
                     <i className="far fa-heart" ></i>
-                </Link>
+                </Link> */}
                 <Link id="nav-cart" className="navbar-item" to="/cart"> 
                     <i className="fas fa-shopping-cart" ></i>
                 </Link>
                 <Link id="nav-login" className="navbar-item" to="/login">
                     <i className="far fa-user"></i>
-                      LOGIN
+                      {/* LOGIN */}
                 </Link>
               </div>
             </div>
