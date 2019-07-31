@@ -15,8 +15,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/:category/" render={routeProps => <Category {...routeProps} />} />
+          <Route exact path="/:category/" render={routeProps => <Category {...routeProps} />} />   
           <Route exact path="/:category/:productid" render={routeProps => <Product {...routeProps} />} />
+          <Route render={() => <h1>404! Page NOT FOUND</h1>} />
         </Switch>
       </div>
     </Router>

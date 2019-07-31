@@ -5,7 +5,7 @@ import "./style.css";
 class Nav extends Component {
   render() {
     return (
-          <nav className="navbar" role="navigation" aria-label="main navigation">
+          <nav id="Nav" className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
               <a id="logo" className="navbar-item" href="/">
                 MINIMALISTE
@@ -31,8 +31,6 @@ class Nav extends Component {
                     <i className="far fa-user"></i>
                       LOGIN
                 </Link>
-
-                
               </div>
             </div>
           </nav>
