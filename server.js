@@ -1,9 +1,12 @@
+// the dotenv file is a hidden file where we keep the code that
+// encrypts are keys. And don't let the dotenv file onto github!
+require('dotenv').config();
+
 const express = require("express");
 const app = express();
-
 const mongoose = require("mongoose");
 const routes = require("./routes");
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));

@@ -3,7 +3,9 @@ Technologies/Frameworks We used:
 * MERN Stack
 * Bulma CSS
 * Stripe API
-* Passport JS
+* Passport JS w/ bcrypt
+* Workbox
+* Axios
 
 Requirements:
 * [x] Must use ReactJS in some way (even if minimal)
