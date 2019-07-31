@@ -7,6 +7,7 @@ Technologies/Frameworks We used:
 * Axios
 * Authenticated w/ Mongoose-Encryption and Bcrypt Hashing
 
+
 Requirements:
 * [x] Must use ReactJS in some way (even if minimal)
 * [x] Must use a Node and Express Web Server
