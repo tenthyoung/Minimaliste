@@ -1,3 +1,7 @@
+// the dotenv file is a hidden file where we keep the code that
+// encrypts are keys. And don't let the dotenv file onto github!
+require('dotenv').config();
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");

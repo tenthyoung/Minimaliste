@@ -49,7 +49,7 @@ class Login extends Component {
     async submitLogin(evt) {
         evt.preventDefault();
 
-        let response = await fetch('/api/users', {
+        let response = await fetch('/api/users/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ class Login extends Component {
         // we need to see if the server failed:
         let json = response.json();
         console.log(json)
-
+        
         
         this.setState({ email: "", password: "" });
     }
