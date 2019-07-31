@@ -6,6 +6,7 @@ Technologies/Frameworks We used:
 * Passport JS w/ bcrypt
 * Workbox
 * Axios
+Hello
 
 Requirements:
 * [x] Must use ReactJS in some way (even if minimal)
