@@ -1,0 +1,32 @@
+#Hero-body {
+    margin-left: 30px;
+}
+
+#Home-right-small-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+/* Hero */
+#Home-hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+#Home-hero-title {
+    margin-bottom: 30px;
+    color: darkslategray;
+    letter-spacing: 1px;
+}
+
+#Home-hero-subtitle {
+    margin-bottom: 30px;
+}
+
+.Home-item {
+    cursor: pointer;
+}
+

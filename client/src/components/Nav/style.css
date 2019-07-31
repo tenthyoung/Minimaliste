@@ -1,3 +1,8 @@
+#Nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .navbar {
   border-radius: 0;
 }
@@ -22,6 +27,7 @@
 
 #navbar-burger-btn {
   border: none;
+  margin-right: 15px;
 }
 
 #navbar-burger-btn:focus {
@@ -53,4 +59,6 @@
 .navbar-item:hover {
   color: lightslategray;
 }
+
+
 
