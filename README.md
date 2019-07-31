@@ -9,7 +9,7 @@ Technologies/Frameworks We used:
 Hello
 
 Requirements:
-* [x] Must use ReactJS in some way (even if minimal)
+* [x] Must use ReactJS isome way (even if minimal)
 * [x] Must use a Node and Express Web Server
 * [x] Must be backed by a MySQL or MongoDB Database with a Sequelize or Mongoose ORM
 * [x] Must have both GET and POST routes for retrieving and adding new data
