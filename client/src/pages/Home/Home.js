@@ -12,7 +12,7 @@ class Home extends Component {
         <div className="columns">
           <div className="Home-item column is-two-thirds">
               <Link className="Home-item row" to='/clocks/'>
-                <img src={process.env.PUBLIC_URL + '/images/clock.jpg'} alt="Brass Clock" />
+                <img className="zoom" src={process.env.PUBLIC_URL + '/images/clock.jpg'} alt="Brass Clock" />
               </Link>
           </div>
           <div id="Home-right-small-column" className="column">
