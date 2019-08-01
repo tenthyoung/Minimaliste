@@ -1,0 +1,8 @@
+.text {
+    margin-right: 15px;
+    color: white;
+}
+
+.text:hover {
+    color: gray;
+}
