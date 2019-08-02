@@ -8,27 +8,30 @@ const Dropdown = (props) => {
                 {props.name}
             </div>
             <div className="navbar-dropdown">
-                <Link to="/cart" className="navbar-item" onClick={props.click}>
-                    Kitchen
+                <Link to="/accessories/" className="navbar-item">
+                    Accessories
                 </Link>
-                <Link to="/cart" className="navbar-item" onClick={props.click}>
-                    Bedroom
+                <Link to="/essentials/" className="navbar-item">
+                    Essentials
                 </Link>
-                <Link to="/cart" className="navbar-item" onClick={props.click}>
-                    Office
+                <Link to="/furniture/" className="navbar-item">
+                    Furniture
                 </Link>
-                <Link to="/cart" className="navbar-item" onClick={props.click}>
-                    Misc
+                <Link to="/homedecor/" className="navbar-item">
+                    Home Decor
+                </Link>
+                <Link to="/pottery/" className="navbar-item">
+                    Pottery
+                </Link>
+                <Link to="/premium/" className="navbar-item">
+                    Premium
                 </Link>
                 <hr className="navbar-divider" />
-                <Link to="/cart" className="navbar-item" onClick={props.click}>
+                <Link to="/aboutus" className="navbar-item">
                     About Us
                 </Link>
             </div>
         </div>
-
-
-
     )
 }
 
