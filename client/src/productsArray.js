@@ -1,4 +1,3 @@
-
 let productsArray = [
     {
         productid: '18237401298',
@@ -59,7 +58,7 @@ let productsArray = [
     {
         productid: '1gwreg32451',
         productName: "Neko Bed",
-        imageName: "bed2.jpg",
+        imageName: "bed2.jpeg",
         price: 2500,
         description: "This bed was made out of pure duck feathers. The Queen of England slept on it.",
         category: 'furniture'
@@ -67,7 +66,7 @@ let productsArray = [
     {
         productid: 'qfdg12354',
         productName: "Empress Bed",
-        imageName: "bed3.jpg",
+        imageName: "bed3.jpeg",
         price: 3000,
         description: "Empress your guests with the Empress Bed 2000. Massages randomly throughout the night. Fully equipped with voice commands.",
         category: 'furniture'
