@@ -282,4 +282,6 @@ let productsArray = [
     },
 
 ]
+
 export default productsArray;
+
