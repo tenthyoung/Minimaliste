@@ -152,7 +152,7 @@ const productArray = {
             price: 35,
             description: "This wooden vase was hand-sanded to resemble a unique and enticing shape for artist-enthusiasts alike.  Appreciate its slender curves and contours."
         },
-        
+
     ],
     Accessories: [
         {
@@ -224,7 +224,7 @@ const productArray = {
             price: 800,
             description: "This rocking chair can sync with your Fitbit, so you know how many times you rocked back and forth."
         },
-        
+
     ],
 
 }
