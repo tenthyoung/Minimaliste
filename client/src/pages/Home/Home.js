@@ -27,7 +27,7 @@ class Home extends Component {
 
             <div className="overlay-container">
               <Link className="Home-item row" to='/essentials/'>
-                <img src={process.env.PUBLIC_URL + '/images/basket.jpg'} alt="Brass Clock" />
+                <img src={process.env.PUBLIC_URL + '/images/cactus.jpg'} alt="Cactus" />
               </Link>
               <div class="overlay">
                 <div class="text">Essentials</div>
@@ -36,7 +36,7 @@ class Home extends Component {
 
             <div className="overlay-container">
               <Link className="Home-item row" to='/accessories/'>
-                <img src={process.env.PUBLIC_URL + '/images/cactus.jpg'} alt="Brass Clock" />
+                <img src={process.env.PUBLIC_URL + '/images/basket.jpg'} alt="Basket" />
               </Link>
               <div class="overlay">
                 <div class="text">Accessories</div>
@@ -62,24 +62,24 @@ class Home extends Component {
 
         <div className="columns">
           <div className="Home-item overlay-container column is-one-thirds">
-            <Link className="" to='/furniture/' >
-              <img src={process.env.PUBLIC_URL + '/images/chair.jpg'} alt="White Chair" />
+            <Link to='/furniture/' >
+              <img src={process.env.PUBLIC_URL + '/images/drawerTable.jpg'} alt="Small White Table with Drawer" />
             </Link>
             <div class="overlay">
               <div class="text">Furniture</div>
             </div>
           </div>
           <div className="Home-item overlay-container column is-one-thirds">
-            <Link className="" to='/pottery/'>
-              <img src={process.env.PUBLIC_URL + '/images/vase.jpg'} alt="Brass Clock" />
+            <Link to='/pottery/'>
+              <img src={process.env.PUBLIC_URL + '/images/vase.jpg'} alt="White Vase" />
             </Link>
             <div class="overlay">
               <div class="text">Pottery</div>
             </div>
           </div>
           <div className="Home-item overlay-container column is-one-thirds">
-            <Link to='/' className="">
-              <img src={process.env.PUBLIC_URL + '/images/rocking-table.jpg'} alt="Brass Clock" />
+            <Link to='/premium/'>
+              <img src={process.env.PUBLIC_URL + '/images/smalltable.jpg'} alt="Small Table" />
             </Link>
             <div class="overlay">
               <div class="text">Premium</div>

@@ -14,12 +14,6 @@ const productArray = {
             description: "This elegant bag was made out of pure camel hair."
         },
         {
-            productName: "Tea Basket",
-            imageName: "basket.jpg",
-            price: 680,
-            description: "This minimal tea basket delivers tea well. An essential product to your kitchenware"
-        },
-        {
             productName: "Half Dozen Eggs",
             imageName: "eggs.jpg",
             price: 20,
@@ -36,6 +30,12 @@ const productArray = {
             imageName: "brassClock.jpg",
             price: 300,
             description: "This brass clock was manufactured with the finest steel in Canada."
+        },
+        {
+            productName: "Cactus",
+            imageName: "cactus.jpg",
+            price: 75,
+            description: "Our cactuses are exported from the most remote areas of the Mojave desert. With a vase handcrafted by our best engineers, this is a great addition to your home decor."
         },
 
     ],
@@ -152,6 +152,7 @@ const productArray = {
             price: 35,
             description: "This wooden vase was hand-sanded to resemble a unique and enticing shape for artist-enthusiasts alike.  Appreciate its slender curves and contours."
         },
+        
     ],
     Accessories: [
         {
@@ -178,17 +179,18 @@ const productArray = {
             price: 200,
             description: "The finest French perfume from Paris."
         },
-        {
-            productName: "Cactus",
-            imageName: "cactus.jpg",
-            price: 75,
-            description: "Our cactuses are exported from the most remote areas of the Mojave desert. With a vase handcrafted by our best engineers, this is a great addition to your home decor."
-        },
+
         {
             productName: "Office Scissors",
             imageName: "scissors.jpg",
             price: 90,
             description: "The key to cutting paper effectively is having the right scissors."
+        },
+        {
+            productName: "Tea Basket",
+            imageName: "basket.jpg",
+            price: 680,
+            description: "This minimal tea basket delivers tea well. An essential product to your kitchenware"
         },
     ],
     Premium: [
