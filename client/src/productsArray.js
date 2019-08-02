@@ -1,5 +1,5 @@
 
-const productArray = {
+let productArray = {
     Essentials: [
         {
             productName: "Baby",
@@ -228,3 +228,4 @@ const productArray = {
     ],
 
 }
+
