@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './Product.css';
+import productsArray from '../../productsArray';
 
 class Product extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             quantity: 0
+             quantity: 1
         }
     }
     
@@ -14,26 +15,44 @@ class Product extends Component {
         this.setState({ quantity: this.state.quantity + 1 })
     }
 
+    decrementQuantity = () => {
+        if (this.state.quantity > 1) {
+            this.setState({ quantity: this.state.quantity - 1 })
+        }
+    }
+
     render() {
         const productid = this.props.match.params.productid;
+        let productObj = productsArray.find(item => item.productid === productid)
+        console.log(productObj.imageName);
 
         return (
             <div className="Product container">
                 <div className="Product-info-row columns">
                     <div className="Prdoduct-image-container column is-two-thirds">
-                        <img className="Product-image" src="https://depot.mikado-themes.com/wp-content/uploads/2017/01/h1-product-1-1024x1024.jpg" />
+                        <img className="Product-image" src={process.env.PUBLIC_URL + `/images/${productObj.imageName}`}/>
                     </div>
                     <div className="column">
-                        <h2 className="Product-title">{productid}. Premium White Chair</h2>
-                        <h3 className="Product-price">$300</h3>
+                        <h2 className="Product-title">{productObj.productName}</h2>
+                        <h3 className="Product-price">${productObj.price}</h3>
                         <p className="Product-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laborum minus itaque exercitationem voluptates, beatae cumque ratione molestias aspernatur! Temporibus!
+                            {productObj.description}
                         </p>
                         <div className="Product-quantity-container column is-half">
 
                         </div>
-                        <button onClick={this.incrementQuantity}>Quantity: {this.state.quantity} </button>
-                        <button></button>
+                        <div className="Product-quantity-container">
+                            <span className="Product-quantity-arrow" onClick={this.decrementQuantity}>
+                                <i className='uil uil-angle-left'></i>
+                            </span>
+                            <span className="Product-quantity-number"> {this.state.quantity} </span>
+                            <span className="Product-quantity-arrow" onClick={this.incrementQuantity}>
+                                <i className='uil uil-angle-right'></i>
+                            </span>
+                        </div>
+                        <br/>
+                        <a class="button">Add to Cart</a>
+
                         
                     </div>
                 </div>
