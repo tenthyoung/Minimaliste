@@ -280,7 +280,7 @@ let productsArray = [
         category: 'premium'
     },
 
+
 ]
 
 export default productsArray;
-
