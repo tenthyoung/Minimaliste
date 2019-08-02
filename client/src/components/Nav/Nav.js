@@ -25,7 +25,6 @@ class Nav extends Component {
                 </Link> */}
                 <Dropdown 
                   name="SHOP"
-                  click={() => window.location.reload()}
                 />
                 {/* <Link id="nav-wishlist" className="navbar-item" to='/wishlist'>
                     <i className="far fa-heart" ></i>
