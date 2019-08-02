@@ -26,16 +26,16 @@ const productArray = {
             description: "These eggs are completely gluten-free. 100% organic. Pasture raised. Protein-free eggs."
         },
         {
-            productName: "Wooden Fruit Bowl",
-            imageName: "fruitBowl.jpg",
-            price: 40,
-            description: "Are you tired of losing your fruit? Need we say more?"
-        },
-        {
             productName: "Siebermanns Gold Watch",
             imageName: "goldWatch.jpg",
             price: 3999,
             description: "Die Technik dieser Golduhr ist so gut, dass wir diese Beschreibung auf Deutsch machen mussten."
+        },
+        {
+            productName: "Brass Clock",
+            imageName: "brassClock.jpg",
+            price: 300,
+            description: "This brass clock was manufactured with the finest steel in Canada."
         },
 
     ],
@@ -85,10 +85,10 @@ const productArray = {
             description: "This radioactive succulent plant weighs 500 lbs. Shipping and Handling is $1000 extra. Minimaliste is not liable for any radioactive symptoms."
         },
         {
-            productName: "Brass Clock",
-            imageName: "brassClock.jpg",
-            price: 300,
-            description: "This brass clock was manufactured with the finest steel in Canada."
+            productName: "Wooden Fruit Bowl",
+            imageName: "fruitBowl.jpg",
+            price: 40,
+            description: "Are you tired of losing your fruit? Need we say more?"
         },
         {
             productName: "Black Wall Clock",
@@ -203,12 +203,6 @@ const productArray = {
             imageName: "pinkSaltRock.jpg",
             price: 250,
             description: "What more is there to say. It is a pink salt rock. Completely edible. Please consult your doctor before consuming in one sitting."
-        },
-        {
-            productName: "Rocking Chair 5000",
-            imageName: "rocking-table.jpg",
-            price: 7500,
-            description: "This small wooden table stands at a staggering 2 feet. A great accessory for your child."
         },
         {
             productName: "Viking Table",

@@ -4,8 +4,8 @@ import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
-import Category from "./components/Category/Category";
-import Product from "./components/Product/Product";
+import Category from "./pages/Category/Category";
+import Product from "./pages/Product/Product";
 import './fontStyles.css'
 
 function App() {
