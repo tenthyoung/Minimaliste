@@ -13,7 +13,7 @@ class Home extends Component {
           <Link className="Home-item column is-two-thirds" to='/homedecor/'>
             <div className="overlay-container">
               <div className="Home-item row">
-                <img id='clockImage' className="" src={process.env.PUBLIC_URL + '/images/clock.jpg'} alt="Clock" />
+                <img id='clockImage' src={process.env.PUBLIC_URL + '/images/clock.jpg'} alt="Clock" />
                 <div className="overlay">
                   <div className="text">Home Decor</div>
                 </div>

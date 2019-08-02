@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import Dropdown from "./Dropdown/Dropdown";
 import "./style.css";
 
@@ -18,12 +18,14 @@ class Nav extends Component {
               </button>
             </div>
             <div id="navbarBasicExample" className="navbar-menu">
+
               <div className="navbar-end">
                 {/* <Link id="nav-search" className="navbar-item" to="/search">
                     SHOP
                 </Link> */}
                 <Dropdown 
                   name="SHOP"
+                  removeDropdown={() => this.removeDropdown()}
                 />
                 {/* <Link id="nav-wishlist" className="navbar-item" to='/wishlist'>
                     <i className="far fa-heart" ></i>
