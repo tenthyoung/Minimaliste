@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ----- Variables ----- */
 /* ----- Global ----- */
 * {
@@ -191,3 +192,13 @@
     color: #ff3f40;
   }
   
+=======
+.Product-title {
+    font-size: 2rem;
+}
+
+.Product-price {
+    font-size: 1.5rem;
+    color: dimgray;
+}
+>>>>>>> 0532d03d43405486e3d766a43326e047c74dc43a

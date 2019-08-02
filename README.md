@@ -3,10 +3,10 @@ Technologies/Frameworks We used:
 * MERN Stack
 * Bulma CSS
 * Stripe API
-* Passport JS w/ bcrypt
 * Workbox
 * Axios
-Hello
+* Authenticated w/ Mongoose-Encryption and Bcrypt Hashing
+
 
 Requirements:
 * [x] Must use ReactJS isome way (even if minimal)

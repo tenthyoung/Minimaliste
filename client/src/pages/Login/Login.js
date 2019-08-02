@@ -77,7 +77,7 @@ class Login extends Component {
             <div className="Login container">
                 <div className="form-structor">
                     <div className={`signup ${this.state.isLoginFormShowing === true ? "slide-up" : ""}`}>
-                        <h2 className="form-title" id="signup" onClick={this.toggleLogin}><span>or</span>Sign up</h2>
+                        <h2 className="form-title" id="signup" onClick={this.toggleLogin}>Create An Account</h2>
                         <form onSubmit={this.submitSignUp}>
                             <div className="form-holder">
                                 <input
