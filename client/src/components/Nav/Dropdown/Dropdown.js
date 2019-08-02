@@ -9,16 +9,22 @@ const Dropdown = (props) => {
             </div>
             <div className="navbar-dropdown">
                 <Link to="/cart" className="navbar-item" onClick={props.click}>
-                    Kitchen
+                    Accessories
                 </Link>
                 <Link to="/cart" className="navbar-item" onClick={props.click}>
-                    Bedroom
+                    Essentials
                 </Link>
                 <Link to="/cart" className="navbar-item" onClick={props.click}>
-                    Office
+                    Furniture
                 </Link>
                 <Link to="/cart" className="navbar-item" onClick={props.click}>
-                    Misc
+                    Home Decor
+                </Link>
+                <Link to="/cart" className="navbar-item" onClick={props.click}>
+                    Pottery
+                </Link>
+                <Link to="/cart" className="navbar-item" onClick={props.click}>
+                    Premium
                 </Link>
                 <hr className="navbar-divider" />
                 <Link to="/cart" className="navbar-item" onClick={props.click}>
