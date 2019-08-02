@@ -25,6 +25,7 @@ class Nav extends Component {
                 </Link> */}
                 <Dropdown 
                   name="SHOP"
+                  removeDropdown={() => this.removeDropdown()}
                 />
                 {/* <Link id="nav-wishlist" className="navbar-item" to='/wishlist'>
                     <i className="far fa-heart" ></i>
