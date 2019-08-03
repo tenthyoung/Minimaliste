@@ -1,40 +1,67 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import './Product.css'
+=======
+import './Product.css';
+import productsArray from '../../productsArray';
+>>>>>>> b03e79e9a2018f835b2f11c1fb8905ed3c37be36
 
 class Product extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             quantity: 0
+             quantity: 1
         }
+
+        this.productid = this.props.match.params.productid;
+        this.productObj = productsArray.find(item => item.productid === this.productid);
+
+
     }
     
     incrementQuantity = () => {
         this.setState({ quantity: this.state.quantity + 1 })
     }
 
-    render() {
-        const productid = this.props.match.params.productid;
+    decrementQuantity = () => {
+        if (this.state.quantity > 1) {
+            this.setState({ quantity: this.state.quantity - 1 })
+        }
+    }
 
+    handleAddToCart = evt => {
+        this.props.addToCart(this.productid, this.state.quantity, this.productObj.price)
+    }
+
+    render() {
         return (
             <div className="Product container">
                 <div className="Product-info-row columns">
                     <div className="Prdoduct-image-container column is-two-thirds">
-                        <img className="Product-image" src="https://depot.mikado-themes.com/wp-content/uploads/2017/01/h1-product-1-1024x1024.jpg" />
+                        <img className="Product-image" src={process.env.PUBLIC_URL + `/images/${this.productObj.imageName}`} alt={this.productObj.productName}/>
                     </div>
                     <div className="column">
-                        <h2 className="Product-title">{productid}. Premium White Chair</h2>
-                        <h3 className="Product-price">$300</h3>
+                        <h2 className="Product-title">{this.productObj.productName}</h2>
+                        <h3 className="Product-price">${this.productObj.price}</h3>
                         <p className="Product-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laborum minus itaque exercitationem voluptates, beatae cumque ratione molestias aspernatur! Temporibus!
+                            {this.productObj.description}
                         </p>
                         <div className="Product-quantity-container column is-half">
 
                         </div>
-                        <button onClick={this.incrementQuantity}>Quantity: {this.state.quantity} </button>
-                        <button></button>
-                        
+                        <div className="Product-quantity-container">
+                            <span className="Product-quantity-arrow" onClick={this.decrementQuantity}>
+                                <i className='uil uil-angle-left'></i>
+                            </span>
+                            <span className="Product-quantity-number"> {this.state.quantity} </span>
+                            <span className="Product-quantity-arrow" onClick={this.incrementQuantity}>
+                                <i className='uil uil-angle-right'></i>
+                            </span>
+                        </div>
+                        <br/>
+                        <button className="button is-warning" onClick={this.handleAddToCart}>Add to Cart</button>
+                        {/* <a class="button is-warning" onClick={this.props.addToCart(this.productObj.productid, this.state.quantity, this.productObj.price)}>Add to Cart</a> */}
                     </div>
                 </div>
             </div>

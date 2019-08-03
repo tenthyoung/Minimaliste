@@ -8,9 +8,9 @@ class Nav extends Component {
     return (
           <nav id="Nav" className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-              <a id="logo" className="navbar-item" href="/">
+              <Link id="logo" className="navbar-item" to="/">
                 MINIMALISTE
-              </a>
+              </Link>
               <button id="navbar-burger-btn" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
@@ -18,13 +18,14 @@ class Nav extends Component {
               </button>
             </div>
             <div id="navbarBasicExample" className="navbar-menu">
+
               <div className="navbar-end">
                 {/* <Link id="nav-search" className="navbar-item" to="/search">
                     SHOP
                 </Link> */}
                 <Dropdown 
                   name="SHOP"
-                  click={() => window.location.reload()}
+                  removeDropdown={() => this.removeDropdown()}
                 />
                 {/* <Link id="nav-wishlist" className="navbar-item" to='/wishlist'>
                     <i className="far fa-heart" ></i>

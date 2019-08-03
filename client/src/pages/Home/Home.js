@@ -13,7 +13,7 @@ class Home extends Component {
           <Link className="Home-item column is-two-thirds" to='/homedecor/'>
             <div className="overlay-container">
               <div className="Home-item row">
-                <img id='clockImage' className="" src={process.env.PUBLIC_URL + '/images/clock.jpg'} alt="Clock" />
+                <img id='clockImage' src={process.env.PUBLIC_URL + '/images/clock.jpg'} alt="Clock" />
                 <div className="overlay">
                   <div className="text">Home Decor</div>
                 </div>
@@ -91,10 +91,10 @@ class Home extends Component {
           <div id="Home-hero-body2" className="hero-body">
             <div id="Home-hero-text-container2" className="container">
               <h1 id="Home-hero-title2" className="title roboto">
-                "I would buy them all again."
+                "Only a true minimalist would buy all their products like I did."
               </h1>
               <h2 id="Home-hero-subtitle2" className="subtitle">
-                -Abraham Lincoln
+                -Benjamin Franklin, Founding Father
               </h2>
             </div>
           </div>

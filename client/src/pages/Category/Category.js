@@ -1,13 +1,35 @@
 import React, { Component } from 'react';
-import './Category.css';
+import style from './Category.module.css';
+import Listing from "../../components/Listing/Listing";
+import productArray from '../../productsArray';
 
 class Category extends Component {
     
     render() {
-        const category = this.props.match.params.category;
+        const routeName = this.props.match.params.category;
+        const productsInCategory = productArray.filter((product) => product.category === routeName)
+        
+        const listings = (
+            <div className={style.Category}>
+                {productsInCategory.map((listing) => {
+                    return (
+                        <Listing 
+                            category={routeName}
+                            productId={listing.productid}
+                            image={process.env.PUBLIC_URL + "/images/" + listing.imageName}
+                            alt={listing.productName}
+                            productName={listing.productName}
+                            key={listing.productid}
+                        />
+                    )
+                })}
+            </div>
+        )
+
         return (
-            <div className="Category">
-                welcome to the {category} page
+            <div className="container">
+                {routeName}
+                {listings}
             </div>
         );
     }
