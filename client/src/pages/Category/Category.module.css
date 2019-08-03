@@ -3,3 +3,9 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.header {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
