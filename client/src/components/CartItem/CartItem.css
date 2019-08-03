@@ -1,0 +1,38 @@
+.CartItem-delete {
+    margin-top: 10px;
+}
+
+.CartItem-price, .CartItem-description {
+    font-size: 1rem;
+    color: dimgray;
+}
+
+.CartItem-thumbnail {
+    width: 200px;
+}
+
+.CartItem-title, .CartItem-total-price {
+    font-size: 18px;
+}
+
+.CartItem-quantity-container {
+    font-size: 1.5rem;
+    color: dimgray;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.CartItem-quantity-number { 
+    font-size: 1rem;
+}
+
+.CartItem-quantity-arrow {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
