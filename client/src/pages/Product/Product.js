@@ -9,6 +9,11 @@ class Product extends Component {
         this.state = {
              quantity: 1
         }
+
+        this.productid = this.props.match.params.productid;
+        this.productObj = productsArray.find(item => item.productid === this.productid);
+
+
     }
     
     incrementQuantity = () => {
@@ -21,22 +26,22 @@ class Product extends Component {
         }
     }
 
-    render() {
-        const productid = this.props.match.params.productid;
-        let productObj = productsArray.find(item => item.productid === productid)
-        console.log(productObj.imageName);
+    handleAddToCart = evt => {
+        this.props.addToCart(this.productid, this.state.quantity, this.productObj.price)
+    }
 
+    render() {
         return (
             <div className="Product container">
                 <div className="Product-info-row columns">
                     <div className="Prdoduct-image-container column is-two-thirds">
-                        <img className="Product-image" src={process.env.PUBLIC_URL + `/images/${productObj.imageName}`}/>
+                        <img className="Product-image" src={process.env.PUBLIC_URL + `/images/${this.productObj.imageName}`} alt={this.productObj.productName}/>
                     </div>
                     <div className="column">
-                        <h2 className="Product-title">{productObj.productName}</h2>
-                        <h3 className="Product-price">${productObj.price}</h3>
+                        <h2 className="Product-title">{this.productObj.productName}</h2>
+                        <h3 className="Product-price">${this.productObj.price}</h3>
                         <p className="Product-description">
-                            {productObj.description}
+                            {this.productObj.description}
                         </p>
                         <div className="Product-quantity-container column is-half">
 
@@ -51,9 +56,8 @@ class Product extends Component {
                             </span>
                         </div>
                         <br/>
-                        <a class="button">Add to Cart</a>
-
-                        
+                        <button className="button is-warning" onClick={this.handleAddToCart}>Add to Cart</button>
+                        {/* <a class="button is-warning" onClick={this.props.addToCart(this.productObj.productid, this.state.quantity, this.productObj.price)}>Add to Cart</a> */}
                     </div>
                 </div>
             </div>

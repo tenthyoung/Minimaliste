@@ -7,6 +7,14 @@
     color: dimgray;
 }
 
+.CartItem-link {
+    color: black;
+}
+
+.CartItem-link:hover {
+    color: darkslategray;
+}
+
 .CartItem-thumbnail {
     width: 200px;
 }

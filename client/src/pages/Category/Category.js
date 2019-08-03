@@ -19,6 +19,7 @@ class Category extends Component {
                             image={process.env.PUBLIC_URL + "/images/" + listing.imageName}
                             alt={listing.productName}
                             productName={listing.productName}
+                            key={listing.productid}
                         />
                     )
                 })}
