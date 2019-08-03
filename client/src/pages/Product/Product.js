@@ -27,7 +27,7 @@ class Product extends Component {
         console.log(productObj.imageName);
 
         return (
-            <div className="Product container">
+            <div className="Product container Product-container">
                 <div className="Product-info-row columns">
                     <div className="Prdoduct-image-container column is-two-thirds">
                         <img className="Product-image" src={process.env.PUBLIC_URL + `/images/${productObj.imageName}`}/>
