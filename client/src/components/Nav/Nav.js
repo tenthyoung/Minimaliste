@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown/Dropdown";
 import "./style.css";
 
@@ -8,9 +8,9 @@ class Nav extends Component {
     return (
           <nav id="Nav" className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-              <a id="logo" className="navbar-item" href="/">
+              <Link id="logo" className="navbar-item" to="/">
                 MINIMALISTE
-              </a>
+              </Link>
               <button id="navbar-burger-btn" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
