@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-import './Product.css'
-=======
 import './Product.css';
 import productsArray from '../../productsArray';
->>>>>>> b03e79e9a2018f835b2f11c1fb8905ed3c37be36
 
 class Product extends Component {
     constructor(props) {

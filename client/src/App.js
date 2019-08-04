@@ -6,6 +6,7 @@ import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import Category from "./pages/Category/Category";
 import Product from "./pages/Product/Product";
+import Contact from "./pages/Contact/Contact";
 import Cart from "./pages/Cart/Cart";
 import './fontStyles.css'
 
@@ -67,6 +68,10 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/Contact" component={Contact} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Home} />
+
             <Route exact path="/login" component={Login} />
             <Route exact path="/cart" render={() => <Cart cart={this.state.cart} removeFromCart={this.removeFromCart}/>} />
             <Route exact path="/:category/" render={routeProps => <Category {...routeProps} />} />

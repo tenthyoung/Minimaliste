@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-size: cover;
+  height: auto;
+  font-family: 'Roboto';
+}
+
+
+.container{
+  max-width: 800px;
+  height: 600px;
+  background-color: whitesmoke;
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.contactus{
+  text-align: center;
+  letter-spacing: 1px;  
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.input,
+.msg .area{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  font-size: 14px;
+  outline: none;
+  transform: all 0.5s ease;
+  border: none;
+}
+
+.login .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+  border: none;
+}
+
+.login .input:last-child{
+  margin-right: 0;
+}
+
+.msg .area{
+  height: 200px;
+}
+
+.btn{
+  width: 250px;
+  background:gold;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.input:focus,
+.msg .area:focus{
+  border: 5px solid black;
+}
+
+.area{
+  border: none;
+}
+
+::-webkit-input-placeholder{
+  font-family: 'roboto';
+}
+
+.Contact_area__2-eSB {
+  border: none !important;
+}
