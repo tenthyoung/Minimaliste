@@ -5,6 +5,10 @@
     cursor: pointer;
 }
 
+#brassClock {
+    height: auto;
+}
+
 .imageContainer {
     margin: auto;
 }

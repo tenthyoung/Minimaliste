@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown/Dropdown";
-import "./style.css";
+import "./Nav.css";
 
 class Nav extends Component {
   render() {
