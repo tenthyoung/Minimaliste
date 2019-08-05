@@ -1,13 +1,14 @@
 import React from "react";
+import './Dropdown.css'
 import { Link } from "react-router-dom";
 
 const Dropdown = (props) => {
     return (
         <div className="navbar-item has-dropdown is-hoverable">
-            <div className="navbar-link">
+            <div id="shopBtn" className="navbar-link is-arrowless">
                 {props.name}
             </div>
-            <div className="navbar-dropdown">
+            <div id="shopDropdown" className="navbar-dropdown">
                 <Link to="/accessories/" className="navbar-item">
                     Accessories
                 </Link>
