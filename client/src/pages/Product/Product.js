@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SubNav from '../../components/SubNav/SubNav';
 import './Product.css';
 import productsArray from '../../productsArray';
 
@@ -33,6 +34,10 @@ class Product extends Component {
     render() {
         return (
             <div className="Product container">
+                <SubNav categoryRoute={this.props.match.params.category} 
+                        productRoute={this.productid} />
+
+
                 <div className="Product-info-row columns">
                     <div className="Prdoduct-image-container column is-two-thirds">
                         <img className="Product-image" src={process.env.PUBLIC_URL + `/images/${this.productObj.imageName}`} alt={this.productObj.productName}/>
