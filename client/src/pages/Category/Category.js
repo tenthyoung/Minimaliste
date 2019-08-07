@@ -51,7 +51,7 @@ class Category extends Component {
             <div className="Category-container container" style={{ "marginBottom": "40px" }}>
 
                 <SubNav categoryRoute={routeName} productRoute=""/>
-                {header}
+                {/* {header} */}
                 {listings}
             </div>
         );

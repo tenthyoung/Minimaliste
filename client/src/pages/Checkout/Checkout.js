@@ -14,10 +14,11 @@ class Checkout extends Component {
             country: "",
             zipcode: "",
             addressSaved: false,
-            paymentComplete: false
+            paymentComplete: false,
         }
 
         this.submitPayment = this.submitPayment.bind(this);
+        this.totalBillwTax = 0;
     }
 
     handleSubmit = (evt) => {
@@ -35,14 +36,13 @@ class Checkout extends Component {
     }
 
     displayTotalBill = () => {
-        let totalBillwTax = this.props.totalBill * 1.08;
-        let totalBillStr = totalBillwTax.toFixed(2).toString();
+        this.totalBillwTax = this.props.totalBill * 1.08;
+        let totalBillStr = this.totalBillwTax.toFixed(2).toString();
 
         return totalBillStr;
     }
 
     async submitPayment(ev) {
-        console.log('hi')
         let {token} = await this.props.stripe.createToken({name: "Name"});
         let response = await fetch("/charge", {
           method: "POST",
@@ -157,7 +157,7 @@ class Checkout extends Component {
 
                         <h1 className='Checkout-subtitle roboto letter-spacing'>Total Bill: ${this.displayTotalBill()}</h1>
                         {/* <CardElement /> */}
-                        <CheckoutForm />
+                        <CheckoutForm totalBill={this.totalBillwTax} />
                     </div>
                        {/* <button id="payBill" className="button is-warning" onClick={this.submitPayment}>Finalize Payment</button> */}
                 </div>
