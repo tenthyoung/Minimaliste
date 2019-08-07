@@ -151,10 +151,11 @@ class Checkout extends Component {
                         <button id="editAddressButton" className="button is-warning" onClick={this.editAddress}>Edit Address</button>
                     </div>
 
-                    <br/> <br/>
+                    <hr className="style-one" />
                     <div id="CheckoutTotalBillContainer" >
-                        <h1 className='Checkout-title roboto letter-spacing'>TOTAL BILL: ${this.displayTotalBill()}</h1>
+                        <h1 className='Checkout-title roboto letter-spacing'>CREDIT CARD</h1>
 
+                        <h1 className='Checkout-subtitle roboto letter-spacing'>Total Bill: ${this.displayTotalBill()}</h1>
                         {/* <CardElement /> */}
                         <CheckoutForm />
                     </div>
