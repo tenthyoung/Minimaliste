@@ -7,9 +7,28 @@ import './Category.css'
 
 class Category extends Component {
 
+    makeProperHeader = (routeName) => {
+        let header = "";
+
+        if (routeName === 'homedecor') {
+            header = 'HOME DECOR'
+        } else {
+            header = routeName.toUpperCase();
+        }
+
+        return header;
+    }
+    
     render() {
         const routeName = this.props.match.params.category;
         const productsInCategory = productArray.filter((product) => product.category === routeName)
+
+
+        const header = (
+            <div className={style.header}>
+                {this.makeProperHeader(routeName)}
+            </div>
+        )
 
         const listings = (
             <div className={style.Category}>
@@ -28,12 +47,11 @@ class Category extends Component {
             </div>
         )
 
-
         return (
             <div className="Category-container container" style={{ "marginBottom": "40px" }}>
 
                 <SubNav categoryRoute={routeName} productRoute=""/>
-
+                {header}
                 {listings}
             </div>
         );
