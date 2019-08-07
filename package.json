@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "proxy": "http://localhost:9000",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -21,14 +22,17 @@
   "dependencies": {
     "axios": "^0.19.0",
     "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
     "if-env": "^1.0.4",
-    "mongoose": "^5.6.6",
+    "mongoose": "^5.6.8",
     "mongoose-encryption": "^2.0.2",
     "mongoose-findorcreate": "^3.0.0",
     "radium": "^0.25.2",
+    "react-stripe-elements": "^4.0.0",
+    "stripe": "^7.6.0",
     "workbox": "0.0.0"
   }
 }
