@@ -1,3 +1,7 @@
+.Home-inner-container {
+    max-width: 1100px;
+}
+
 #Home-right-small-column {
     display: flex;
     flex-direction: column;

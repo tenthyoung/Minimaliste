@@ -6,6 +6,9 @@
 /.pnp
 .pnp.js
 
+# Stripe API
+keys_dev.js
+
 # testing
 /coverage
 

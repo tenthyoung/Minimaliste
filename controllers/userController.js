@@ -1,7 +1,8 @@
 const db = require("../models");
 const bcrypt = require('bcrypt');
 const saltRounds = 10; // this is for bcrypt to further secure our passwords
-
+const keys = require('../config/keys');
+const stripe = require('stripe')(keys.stripeSecretKey);
 
 module.exports = {
   create: function (req, res) {
@@ -40,7 +41,23 @@ module.exports = {
         }
       }
     });
-  }
+  },
+  chargePayment: async (req, res) => {
+      try {
+        let {status} = await stripe.charges.create({
+          amount: 2000,
+          currency: "usd",
+          description: "An example charge",
+          source: req.body
+        });
+        console.log("Payment successfully charged via Stripe API")
+    
+        res.json({status});
+      } catch (err) {
+        console.log(err)
+        res.status(500).end();
+      }
+  },
 };
 //   findAll: function(req, res) {
 //     db.Book.find(req.query)

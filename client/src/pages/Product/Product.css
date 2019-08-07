@@ -2,6 +2,10 @@
     font-size: 2rem;
 }
 
+.Product-info-row {
+    margin-left: 10px;
+}
+
 .Product-price {
     font-size: 1.5rem;
     color: dimgray;
@@ -21,6 +25,7 @@
 .Product-quantity-arrow {
     cursor: pointer;
 }
+
 
 
 

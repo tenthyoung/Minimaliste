@@ -13,15 +13,7 @@ class Cart extends Component {
         }
     }
 
-    handleCalcTotalBill = () => {
-        this.props.calcTotalBill();
-    }
-
     render() {
-        if (this.props.totalBill === 0 && this.state.firstTime === false) {
-            this.handleCalcTotalBill();
-            this.setState({ firstTime: true });
-        }
         return (
             <div className="Cart">
                 <div className="container">

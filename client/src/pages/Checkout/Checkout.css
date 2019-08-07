@@ -1,11 +1,60 @@
 .Checkout {
-    min-height: 80vh;
+    padding-top: 20px;
+    min-height: 90vh;
+    margin-left: 86px;
+}
+
+.Checkout-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.Checkout-field-item {
+    margin-bottom: 10px;
+}
+
+#Checkout-form-container {
+    max-width: 50vw;
+}
+
+
+#country-input {
+    width: 80px;
+}
+
+#city {
+    max-width: 120px;
+}
+
+#country {
+    max-width: 120px;
+}
+
+#zipcode {
+    width: 120px;
+}
+
+#cityStateRow {
+    margin-bottom: 0px;
+}
+
+
+#displayAddressContainerAfterSaved #addresseeName {
+    font-weight: bold;
+}
+
+#editAddressButton {
+    margin-top: 10px
 }
 
 .Checkout-input {
     width: 400px;
 }
 
-.is-focused {
-    outline: none;
+.state-input {
+    width: 80px;
+}
+
+.city-input {
+    width: 150px;
 }
