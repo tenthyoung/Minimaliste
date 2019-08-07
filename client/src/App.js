@@ -7,6 +7,8 @@ import Footer from "./components/Footer/Footer";
 import Category from "./pages/Category/Category";
 import Product from "./pages/Product/Product";
 import Checkout from "./pages/Checkout/Checkout";
+import Contact from "./pages/Contact/Contact";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import Cart from "./pages/Cart/Cart";
 import './fontStyles.css'
 
@@ -80,7 +82,8 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/Contact" component={Contact} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/aboutus" component={AboutUs} />
             <Route exact path="/" component={Home} />
             <Route exact path="/" component={Home} />
 
