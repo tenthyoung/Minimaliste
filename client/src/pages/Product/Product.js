@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Product.css';
 import productsArray from '../../productsArray';
+import ProductReviews from '../../components/ProductReviews/ProductReviews'
 
 class Product extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             quantity: 1
+            quantity: 1
         }
     }
     
@@ -56,6 +57,7 @@ class Product extends Component {
                         
                     </div>
                 </div>
+                <ProductReviews />
             </div>
         );
     }
