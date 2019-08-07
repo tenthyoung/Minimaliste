@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import Category from "./pages/Category/Category";
 import Product from "./pages/Product/Product";
 import Checkout from "./pages/Checkout/Checkout";
+import Contact from "./pages/Contact/Contact";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import Cart from "./pages/Cart/Cart";
 import keys from './config/keys';
 import './fontStyles.css';
@@ -95,6 +97,8 @@ class App extends Component {
                     </Elements>
                   )
                 }} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/aboutus" component={AboutUs} />
               <Route exact path="/:category/" render={routeProps => <Category {...routeProps} />} />
               <Route exact path="/:category/:productid" render={routeProps => <Product {...routeProps} addToCart={this.addToCart} />} />
               <Route render={() => <h1>404! Page NOT FOUND</h1>} />
@@ -104,7 +108,6 @@ class App extends Component {
           </div>
       </StripeProvider>
         </Router>
-
     );
   }
 }
