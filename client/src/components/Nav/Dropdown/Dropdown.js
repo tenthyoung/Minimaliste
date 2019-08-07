@@ -27,10 +27,10 @@ const Dropdown = (props) => {
                 <Link to="/premium/" className="navbar-item">
                     Premium
                 </Link>
-                <hr className="navbar-divider" />
+                {/* <hr className="navbar-divider" />
                 <Link to="/aboutus" className="navbar-item">
                     About Us
-                </Link>
+                </Link> */}
             </div>
         </div>
     )

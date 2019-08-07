@@ -1,11 +1,73 @@
 .Checkout {
-    min-height: 80vh;
+    padding-top: 20px;
+    min-height: 90vh;
+    margin-left: 86px;
+}
+
+.Checkout-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.Checkout-subtitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.Checkout-field-item {
+    margin-bottom: 10px;
+}
+
+#Checkout-form-container {
+    max-width: 50vw;
+}
+
+
+#country-input {
+    width: 80px;
+}
+
+#city {
+    max-width: 120px;
+}
+
+#country {
+    max-width: 120px;
+}
+
+#zipcode {
+    width: 120px;
+}
+
+#cityStateRow {
+    margin-bottom: 0px;
+}
+
+
+#displayAddressContainerAfterSaved #addresseeName {
+    font-weight: bold;
+}
+
+#editAddressButton {
+    margin-top: 10px
 }
 
 .Checkout-input {
     width: 400px;
 }
 
-.is-focused {
-    outline: none;
+.state-input {
+    width: 80px;
+}
+
+.city-input {
+    width: 150px;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }

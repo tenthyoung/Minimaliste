@@ -2,9 +2,8 @@
     font-size: 2rem;
 }
 
-.Product-container {
-    margin-top: 50px;
-    margin-bottom: 100px;
+.Product-info-row {
+    margin-left: 10px;
 }
 
 .Product-price {
@@ -26,6 +25,7 @@
 .Product-quantity-arrow {
     cursor: pointer;
 }
+
 
 
 
