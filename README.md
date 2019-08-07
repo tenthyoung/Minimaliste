@@ -1,7 +1,11 @@
-# Project3
+# Minimaliste E-Commerce Website
+Minimaliste is an elegant e-commerce website that promotes a minimalist lifestyle.
+
 Technologies/Frameworks We used:
-* MERN Stack
-* Mongoose ORM
+* React JS
+* MongoDB & Mongoose ORM
+* Express JS
+* Node JS
 * Bulma CSS
 * Stripe API
 * Authenticated w/ Mongoose-Encryption and Bcrypt Hashing
