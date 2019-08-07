@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './AboutUs.css';
 import { Link } from 'react-router-dom';
 
 import { NONAME } from "dns";
@@ -8,8 +9,8 @@ class AboutUs extends Component {
     render() {
 
         return (
-            <div className="container">
-                <div className="row">
+            <div className="AboutUs container">
+                <div className="AboutUs-row row">
                     <div className="columns">
                     <div className="column">
                             <div className="our - team">
