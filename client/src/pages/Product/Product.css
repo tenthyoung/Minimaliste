@@ -2,6 +2,11 @@
     font-size: 2rem;
 }
 
+.Product-container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 .Product-price {
     font-size: 1.5rem;
     color: dimgray;
