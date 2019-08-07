@@ -1,0 +1,76 @@
+#Nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+#nav-cart:hover, #nav-login:hover { 
+  background-color: white;
+}
+#nav-cart:focus, #nav-login:focus {
+  color: black;
+  background-color: white;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+.fa-user, .fa-shopping-cart {
+  margin-right: 2px;
+  font-size: 15px;
+}
+
+#logo {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+#logo:focus {
+  color: black;
+}
+
+#nav-login {
+  margin-right: 30px;
+}
+
+#navbar-burger-btn {
+  border: none;
+  margin-right: 15px;
+}
+
+#navbar-burger-btn:focus {
+  outline: 0;
+}
+
+#navbar-burger-btn:hover {
+  background-color: white;
+  color: lightslategray;
+}
+
+#nav-login, #nav-cart, #nav-search, #nav-wishlist {
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+/* Navbar hover effects */
+#logo:hover, #nav-login:hover, #nav-cart:hover, #nav-search:hover,#nav-wishlist:hover {
+  color: lightslategray;
+  cursor: pointer;
+
+}
+
+#logo, #nav-login, #nav-cart, #nav-search, #nav-wishlist {
+  transition: 0.3s ease-in-out;
+}
+
+
+.navbar-item:hover {
+  color: lightslategray;
+}
+
+
+
