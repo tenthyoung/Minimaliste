@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import SubNav from '../../components/SubNav/SubNav';
 import './Product.css';
 import productsArray from '../../productsArray';
+import ProductReviews from '../../components/ProductReviews/ProductReviews'
 
 class Product extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             quantity: 1
+            quantity: 1
         }
 
         this.productid = this.props.match.params.productid;
@@ -33,10 +34,10 @@ class Product extends Component {
 
     render() {
         return (
+
             <div className="Product container">
                 <SubNav categoryRoute={this.props.match.params.category} 
                         productRoute={this.productid} />
-
 
                 <div className="Product-info-row columns">
                     <div className="Prdoduct-image-container column is-two-thirds">
@@ -65,6 +66,7 @@ class Product extends Component {
                         {/* <a class="button is-warning" onClick={this.props.addToCart(this.productObj.productid, this.state.quantity, this.productObj.price)}>Add to Cart</a> */}
                     </div>
                 </div>
+                <ProductReviews />
             </div>
         );
     }
