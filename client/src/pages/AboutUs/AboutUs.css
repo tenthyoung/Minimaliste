@@ -1,4 +1,12 @@
+.AboutUs {
+  height: 80vh;
+}
 
+.AboutUs-row {
+  margin-top: 30vh;
+}
+
+/* 
 body {
     font-family: tahoma;
     height: 100vh;
@@ -110,4 +118,4 @@ body {
     color: #1369ce;
     background-color: #f7f5ec;
   }
-  
+   */
