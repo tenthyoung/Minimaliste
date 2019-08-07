@@ -44,7 +44,7 @@ let productsArray = [
         productName: "Cactus",
         imageName: "cactus.jpg",
         price: 75,
-        description: "Our cactuses are exported from the most remote areas of the Mojave desert. With a vase handcrafted by our best engineers, this is a great addition to your home decor.",
+        description: "9 out of 10 people who bought this cactus said it improved their dating life.",
         category: 'essentials'
     },
     {
@@ -148,7 +148,7 @@ let productsArray = [
         productName: "Tea Cup",
         imageName: "claycup.jpg",
         price: 30,
-        description: "This clay cup was hand molded by the finest potterers in Japan",
+        description: "This clay cup was hand molded by the finest potterers in Japan.",
         category: 'pottery'
     },
     {
@@ -156,7 +156,7 @@ let productsArray = [
         productName: "Clay Vase",
         imageName: "clayVase.jpg",
         price: 50,
-        description: "Our clay vases are made with the best sand in the industry",
+        description: "Our clay vases are made with the best sand in the industry.",
         category: 'pottery'
     },
     {
@@ -236,7 +236,7 @@ let productsArray = [
         productName: "Tea Basket",
         imageName: "basket.jpg",
         price: 680,
-        description: "This minimal tea basket delivers tea well. An essential product to your kitchenware",
+        description: "This minimal tea basket delivers tea well. An essential product to your kitchenware.",
         category: 'accessories'
     },
     {
@@ -260,7 +260,7 @@ let productsArray = [
         productName: "Viking Table",
         imageName: "smalltable.jpg",
         price: 9001,
-        description: "This viking table has been fully remanugactured based off the ancient viking blueprints of finely crafted tables.",
+        description: "This viking table has been fully remanufactured based off the ancient viking blueprints of finely crafted tables.",
         category: 'premium'
     },
     {

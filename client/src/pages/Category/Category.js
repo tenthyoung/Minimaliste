@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import style from './Category.module.css';
 import Listing from "../../components/Listing/Listing";
 import productArray from '../../productsArray';
+import SubNav from '../../components/SubNav/SubNav';
 
 class Category extends Component {
 
@@ -21,6 +22,7 @@ class Category extends Component {
         const routeName = this.props.match.params.category;
         const productsInCategory = productArray.filter((product) => product.category === routeName)
 
+
         const header = (
             <div className={style.header}>
                 {this.makeProperHeader(routeName)}
@@ -31,22 +33,22 @@ class Category extends Component {
             <div className={style.Category}>
                 {productsInCategory.map((listing) => {
                     return (
-                        <Listing 
+                        <Listing
                             category={routeName}
                             productId={listing.productid}
                             image={process.env.PUBLIC_URL + "/images/" + listing.imageName}
                             alt={listing.productName}
                             productName={listing.productName}
+                            key={listing.productid}
                         />
                     )
                 })}
             </div>
         )
 
-        console.log(routeName);
-
         return (
-            <div className="container">
+            <div className="container" style={{ "marginBottom": "40px" }}>
+                <SubNav categoryRoute={routeName} productRoute=""/>
                 {header}
                 {listings}
             </div>

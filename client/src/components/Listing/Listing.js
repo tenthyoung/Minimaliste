@@ -9,6 +9,7 @@ const Listing = props => {
             <div className="overlay-container">
                 <div className={style.imageContainer}>
                     <img
+                        id={props.productid === '19243y7' ? 'brassClock' : ''}
                         className={style.product}
                         src={props.image}
                         alt={props.alt}

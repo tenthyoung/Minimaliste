@@ -1,0 +1,18 @@
+.Cart {
+    padding-top: 20px;
+    min-height: 90vh;
+    margin-left: 86px;
+
+}
+
+.Cart-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#proceedToCheckoutBtn {
+    display: block;
+    width: 125px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

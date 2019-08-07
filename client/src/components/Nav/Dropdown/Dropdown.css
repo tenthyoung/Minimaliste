@@ -1,0 +1,24 @@
+#shopBtn {
+    color: black;
+}
+
+#shopBtn:hover { 
+    transition: 1s ease-in-out;
+}
+#shopBtn:hover {
+    background-color: white;
+    color: darkslategray;
+}
+
+#shopDropdown .navbar-item:active {
+    background-color: white;
+    color: dimgray;
+}
+#shopDropdown .navbar-item:hover { 
+    background-color: white;
+    color: dimgray;
+}
+#shopDropdown .navbar-item:focus {
+    background-color: white;
+    color: dimgray;
+}

@@ -22,6 +22,7 @@ const Footer = () => {
           className={style.text}
           href="mailto:contact@minimaliste.com?Subject=I%20want%20to%20buy%20everything"
           target="_blank"
+          rel="noopener noreferrer"
         >
           CONTACT@MINIMALISTE.COM
         </a>
