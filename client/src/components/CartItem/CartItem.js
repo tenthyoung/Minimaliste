@@ -20,6 +20,7 @@ class CartItem extends Component {
 
     incrementQuantity = () => {
         this.setState({ quantity: this.state.quantity + 1 }, this.changeTotalPrice)
+
     }
 
     decrementQuantity = () => {
@@ -31,6 +32,8 @@ class CartItem extends Component {
     changeTotalPrice = () => {
         let newTotalPrice = this.state.quantity * this.props.price;
         this.setState({totalPrice: newTotalPrice});
+        this.props.updateQuantity(this.cartItemObj.productid, this.state.quantity);
+
     }
 
     handleRemoveFromCart = (evt) => {
@@ -38,7 +41,6 @@ class CartItem extends Component {
     }
 
     render() {
-
         return (
             <div className="CartItem columns">
                 <div className='column is-one-quarter'>
@@ -56,7 +58,7 @@ class CartItem extends Component {
                 </div>
                 <div className="column is-one-quarter">
                     <div className="CartItem-quantity-container">
-                        <p className="CartItem-total-price">Total: ${this.state.totalPrice}</p>
+                        <p className="CartItem-total-price">Price: ${this.state.totalPrice}</p>
                         <span className="CartItem-quantity-arrow" onClick={this.decrementQuantity}>
                             <i className='uil uil-angle-left'></i>
                         </span>

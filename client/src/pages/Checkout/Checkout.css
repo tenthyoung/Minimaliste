@@ -1,0 +1,11 @@
+.Checkout {
+    min-height: 80vh;
+}
+
+.Checkout-input {
+    width: 400px;
+}
+
+.is-focused {
+    outline: none;
+}
