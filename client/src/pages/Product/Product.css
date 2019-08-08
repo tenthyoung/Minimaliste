@@ -1,3 +1,13 @@
+.Product {
+    margin-top: 2.5vh;
+    margin-bottom: 10vh;
+}
+
+.Product-image {
+    height: auto;
+    width: 
+}
+
 .Product-title {
     font-size: 2rem;
 }
