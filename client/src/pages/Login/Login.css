@@ -19,7 +19,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 
@@ -27,7 +27,8 @@ html, body {
   background-color: #222;
   border-radius: 15px;
   height: 550px;
-  width: 350px;
+  /* width: 350px; */
+  width: 500px;
   position: relative;
   overflow: hidden;
 }
@@ -42,7 +43,8 @@ html, body {
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 500px;
-  background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf884ad570b50659c5fa2dc2cfb20ecf&auto=format&fit=crop&w=1000&q=100");
+  /* background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf884ad570b50659c5fa2dc2cfb20ecf&auto=format&fit=crop&w=1000&q=100"); */
+  background-image: url("https://images.pexels.com/photos/534172/pexels-photo-534172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 .form-structor .signup {
   position: absolute;
