@@ -66,7 +66,7 @@ class Product extends Component {
                         {/* <a class="button is-warning" onClick={this.props.addToCart(this.productObj.productid, this.state.quantity, this.productObj.price)}>Add to Cart</a> */}
                     </div>
                 </div>
-                <ProductReviews />
+                {/* <ProductReviews />  */}
             </div>
         );
     }
