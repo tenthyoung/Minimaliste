@@ -2,6 +2,9 @@
   "name": "react-google-books",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "12.8.0"
+  },
   "main": "server.js",
   "proxy": "http://localhost:9000",
   "scripts": {
