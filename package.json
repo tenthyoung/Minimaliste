@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "node": "12.8.0"
+    "node": "12.8.0",
+    "npm": "6.10.3"
   },
   "main": "server.js",
   "proxy": "http://localhost:9000",
