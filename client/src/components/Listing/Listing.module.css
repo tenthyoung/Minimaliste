@@ -1,0 +1,43 @@
+.product {
+    height: 250px;
+    width: 275px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#brassClock {
+    height: auto;
+}
+
+.imageContainer {
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.75s ease-in-out;
+    background-color: rgba(252, 252, 252, 0.959);
+}
+
+.overlay-container:hover .overlay {
+    opacity: 0.75;
+}
+
+.text {
+    color: darkslategray;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

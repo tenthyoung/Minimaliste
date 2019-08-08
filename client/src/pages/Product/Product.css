@@ -1,0 +1,41 @@
+.Product {
+    margin-top: 2.5vh;
+    margin-bottom: 10vh;
+}
+
+.Product-image {
+    height: auto;
+    width: 
+}
+
+.Product-title {
+    font-size: 2rem;
+}
+
+.Product-info-row {
+    margin-left: 10px;
+}
+
+.Product-price {
+    font-size: 1.5rem;
+    color: dimgray;
+}
+
+.Product-quantity-container {
+    font-size: 1.5rem;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.Product-quantity-arrow {
+    cursor: pointer;
+}
+
+
+
+

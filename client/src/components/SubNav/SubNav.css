@@ -1,0 +1,16 @@
+.SubNav-title {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgba(74,74,74,0.95)
+}
+
+.SubNav-product-title {
+    font-size: 19px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgba(74,74,74,0.95)
+}
