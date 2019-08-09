@@ -8,13 +8,13 @@ const Footer = () => {
     <footer className="footer has-background-black">
       <div className="content has-text-centered">
         <p>
-          <Link to="/" className={style.text}>
+          <Link to="/Returns" className={style.text}>
             Returns
           </Link>
-          <Link to="/" className={style.text}>
+          <Link to="/Copyright" className={style.text}>
             Copyright & Terms
           </Link>
-          <Link to="/" className={style.text}>
+          <Link to="/Contact" className={style.text}>
             Contact
           </Link>
         </p>

@@ -3,6 +3,7 @@ import style from './Category.module.css';
 import Listing from "../../components/Listing/Listing";
 import productArray from '../../productsArray';
 import SubNav from '../../components/SubNav/SubNav';
+import './Category.css'
 
 class Category extends Component {
 
@@ -47,9 +48,10 @@ class Category extends Component {
         )
 
         return (
-            <div className="container" style={{ "marginBottom": "40px" }}>
+            <div className="Category-container container" style={{ "marginBottom": "40px" }}>
+
                 <SubNav categoryRoute={routeName} productRoute=""/>
-                {header}
+                {/* {header} */}
                 {listings}
             </div>
         );

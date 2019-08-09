@@ -135,7 +135,7 @@ class Login extends Component {
                                             className="input"
                                         />
                                 </div>
-                                <button className="submit-btn">Log in</button>
+                                <button className="submit-btn is-warning">Log in</button>
                             </form>
                         </div>
                     </div>

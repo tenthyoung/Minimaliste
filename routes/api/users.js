@@ -8,6 +8,10 @@ router.route("/")
 
 router.route('/login')
   .post(userController.findUser);
+
+router.route('/charge')
+  .post(userController.chargePayment);
+
 // Matches with "/api/users/:id"
 // router
 //   .route("/:id")
