@@ -31,7 +31,7 @@
     "express": "^4.17.1",
     "express-session": "^1.16.2",
     "if-env": "^1.0.4",
-    "mongoose": "^5.6.8",
+    "mongoose": "^5.7.5",
     "mongoose-encryption": "^2.0.2",
     "mongoose-findorcreate": "^3.0.0",
     "stripe": "^7.6.1",
